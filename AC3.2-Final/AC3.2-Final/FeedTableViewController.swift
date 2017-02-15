@@ -18,6 +18,7 @@ class FeedTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarItem.title = "Feed"
         self.navigationItem.title = "Unit6Final-staGram"
         
         self.databaseRef = FIRDatabase.database().reference().child("posts")

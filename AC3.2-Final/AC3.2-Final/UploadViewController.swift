@@ -18,7 +18,8 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = "TITLE HERE"
+        self.tabBarItem.title = "Upload"
+        self.tabBarController?.title = "BLACH"
         picker.delegate = self
         self.databaseRef = FIRDatabase.database().reference().child("posts")
         

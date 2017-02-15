@@ -15,6 +15,7 @@ class FeedTableViewController: UITableViewController {
     var databaseRef: FIRDatabaseReference!
     var posts = [FeedPost]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Unit6Final-staGram"
@@ -57,7 +58,7 @@ class FeedTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! FeedCell
         let post = posts[indexPath.row]
         // Configure the cell...
-        cell.imageComment.text = post.comment
+        cell.commentLabel.text = post.comment
         
         let storage = FIRStorage.storage()
         let storageRef = storage.reference()

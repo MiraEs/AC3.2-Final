@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -102,39 +103,30 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A0l-30-7dU">
-                                            <rect key="frame" x="8" y="8" width="375" height="208"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="375" id="Dsc-Py-6YA"/>
-                                                <constraint firstAttribute="height" constant="208" id="gcD-Ty-SKF"/>
-                                            </constraints>
+                                            <rect key="frame" x="8" y="8" width="359" height="287.5"/>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalHuggingPriority="251" text="Comments here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-pD-MCH">
-                                            <rect key="frame" x="8" y="224" width="375" height="145"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="375" id="KBI-jE-wDv"/>
-                                                <constraint firstAttribute="height" constant="145" id="P7j-QQ-88I"/>
-                                            </constraints>
-                                            <color key="textColor" red="0.57328114139999997" green="0.57457310949999996" blue="0.59428836870000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n48-Yy-htL">
+                                            <rect key="frame" x="8" y="303.5" width="359" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="n48-Yy-htL" firstAttribute="leading" secondItem="oju-N1-6QL" secondAttribute="leadingMargin" id="0J1-Kq-8Wu"/>
                                         <constraint firstItem="A0l-30-7dU" firstAttribute="top" secondItem="oju-N1-6QL" secondAttribute="topMargin" id="2Wk-0G-5FT"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="A0l-30-7dU" secondAttribute="trailing" id="3Sq-9a-gzU"/>
-                                        <constraint firstItem="R6F-pD-MCH" firstAttribute="top" secondItem="A0l-30-7dU" secondAttribute="bottom" constant="8" id="61M-Zi-g5W"/>
-                                        <constraint firstItem="R6F-pD-MCH" firstAttribute="centerX" secondItem="oju-N1-6QL" secondAttribute="centerX" id="AbW-JK-dWD"/>
-                                        <constraint firstItem="R6F-pD-MCH" firstAttribute="leading" secondItem="oju-N1-6QL" secondAttribute="leadingMargin" id="GRy-RI-Kb2"/>
+                                        <constraint firstItem="n48-Yy-htL" firstAttribute="trailing" secondItem="oju-N1-6QL" secondAttribute="trailingMargin" id="EwD-ZR-Iir"/>
                                         <constraint firstItem="A0l-30-7dU" firstAttribute="leading" secondItem="oju-N1-6QL" secondAttribute="leadingMargin" id="H9t-Pq-L6U"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="R6F-pD-MCH" secondAttribute="trailing" id="lcM-M0-oGy"/>
+                                        <constraint firstItem="A0l-30-7dU" firstAttribute="width" secondItem="oju-N1-6QL" secondAttribute="height" multiplier="375:421" id="cfU-ty-Guc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="n48-Yy-htL" secondAttribute="bottom" constant="71" id="g7K-uC-eVy"/>
+                                        <constraint firstItem="n48-Yy-htL" firstAttribute="top" secondItem="A0l-30-7dU" secondAttribute="bottom" constant="8" id="jzO-vM-5lJ"/>
                                         <constraint firstItem="A0l-30-7dU" firstAttribute="centerX" secondItem="oju-N1-6QL" secondAttribute="centerX" id="qbP-du-5t2"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="R6F-pD-MCH" secondAttribute="bottom" constant="44" id="xyx-d9-Yec"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="commentLabel" destination="n48-Yy-htL" id="x4i-vm-6Se"/>
                                     <outlet property="feedImage" destination="A0l-30-7dU" id="5C7-SI-0tF"/>
-                                    <outlet property="imageComment" destination="R6F-pD-MCH" id="ToI-dI-psq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -209,7 +201,7 @@
                             <constraint firstItem="Way-9L-EHj" firstAttribute="top" secondItem="Fi2-H3-rkx" secondAttribute="bottom" constant="8" id="yvt-At-ppq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="camera_icon" selectedImage="camera_icon" id="6qA-6J-JbU"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="upload" selectedImage="upload" id="6qA-6J-JbU"/>
                     <navigationItem key="navigationItem" title="Title" id="wkC-zi-dLH">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="3cp-ow-zvf">
                             <connections>
@@ -251,5 +243,6 @@
         <image name="camera_icon" width="60" height="55"/>
         <image name="chickenleg" width="75" height="76"/>
         <image name="meatly_logo" width="171" height="152"/>
+        <image name="upload" width="44" height="44"/>
     </resources>
 </document>

@@ -10,7 +10,8 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
-    @IBOutlet weak var imageComment: UITextView!
+    @IBOutlet weak var commentLabel: UILabel!
+    //@IBOutlet weak var imageComment: UITextView!
     @IBOutlet weak var feedImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

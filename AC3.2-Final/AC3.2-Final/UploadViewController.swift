@@ -18,7 +18,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.title = "TITLE HERE"
         picker.delegate = self
         self.databaseRef = FIRDatabase.database().reference().child("posts")
         
@@ -45,6 +45,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
             self.uploadImageView.contentMode = .scaleAspectFit
             self.uploadImageView.image = image
         }
+        addToFB() // transfer this to "dontButton" outlet
         self.dismiss(animated: true, completion: nil)
     }
 

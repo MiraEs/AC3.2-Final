@@ -22,38 +22,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="meatly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="U89-mx-ofg">
-                                <rect key="frame" x="85" y="47" width="204" height="176"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-xO-XWM">
-                                <rect key="frame" x="85" y="266" width="204" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-xO-XWM">
+                                <rect key="frame" x="85" y="286" width="204" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRb-ZI-Qhp">
-                                <rect key="frame" x="85" y="318" width="204" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRb-ZI-Qhp">
+                                <rect key="frame" x="85" y="338" width="204" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W2-0B-yb9">
-                                <rect key="frame" x="124" y="392" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W2-0B-yb9">
+                                <rect key="frame" x="124" y="412" width="55" height="30"/>
                                 <state key="normal" title="Login   /"/>
                                 <connections>
                                     <action selector="loginToFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzs-hO-rlp"/>
                                     <segue destination="PXZ-XA-Ag4" kind="show" identifier="loginSegue" id="Cjp-Aq-FyK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5n-mh-XJo">
-                                <rect key="frame" x="193" y="392" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5n-mh-XJo">
+                                <rect key="frame" x="193" y="412" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerToFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWG-2Y-K2L"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meatly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="U89-mx-ofg">
+                                <rect key="frame" x="85" y="91" width="204" height="152"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,6 +73,7 @@
                             <constraint firstItem="CRb-ZI-Qhp" firstAttribute="trailing" secondItem="T8I-xO-XWM" secondAttribute="trailing" id="xkn-Dk-qIZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Eyk-Ie-8dB"/>
                     <connections>
                         <outlet property="emailTextField" destination="T8I-xO-XWM" id="NGk-g0-hv7"/>
                         <outlet property="loginButton" destination="3W2-0B-yb9" id="yul-YI-buS"/>
@@ -82,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="96"/>
+            <point key="canvasLocation" x="872.79999999999995" y="95.802098950524751"/>
         </scene>
         <!--Feed-->
         <scene sceneID="s8x-e3-dTB">
@@ -107,7 +108,7 @@
                                                 <constraint firstAttribute="height" constant="208" id="gcD-Ty-SKF"/>
                                             </constraints>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" text="Comments here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-pD-MCH">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" verticalHuggingPriority="251" text="Comments here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-pD-MCH">
                                             <rect key="frame" x="8" y="224" width="375" height="145"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <constraints>
@@ -150,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHa-to-EEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.5999999999999" y="-6.746626686656672"/>
+            <point key="canvasLocation" x="2456.8000000000002" y="-6.746626686656672"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Nc3-M8-n0M">
@@ -170,15 +171,15 @@
             </objects>
             <point key="canvasLocation" x="772" y="824"/>
         </scene>
-        <!--Upload-->
+        <!--Title-->
         <scene sceneID="Vqt-gM-G7T">
             <objects>
-                <viewController id="aMa-AE-f4f" customClass="UploadViewController" customModule="AC3_2_Final" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="aMa-AE-f4f" customClass="UploadViewController" customModule="AC3_2_Final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fi2-H3-rkx"/>
                         <viewControllerLayoutGuide type="bottom" id="Hma-42-Hh5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ebd-96-XHk">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Ebd-96-XHk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -197,6 +198,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.42522033443429713" blue="0.48890224358974355" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="7Ph-Q3-nWR" secondAttribute="trailing" id="5sS-8w-ZTH"/>
                             <constraint firstItem="Way-9L-EHj" firstAttribute="leading" secondItem="Ebd-96-XHk" secondAttribute="leadingMargin" constant="-16" id="KlH-jO-Nk0"/>
@@ -208,10 +210,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" image="camera_icon" selectedImage="camera_icon" id="6qA-6J-JbU"/>
-                    <navigationItem key="navigationItem" title="Upload" id="ZTz-9D-6Nm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="RxW-gA-Rmi">
+                    <navigationItem key="navigationItem" title="Title" id="wkC-zi-dLH">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="3cp-ow-zvf">
                             <connections>
-                                <action selector="doneButton:" destination="aMa-AE-f4f" id="IED-9X-326"/>
+                                <action selector="doneButton:" destination="aMa-AE-f4f" id="dro-6h-eIO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -223,12 +225,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouC-sh-HLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.5999999999999" y="691.304347826087"/>
+            <point key="canvasLocation" x="2456.8000000000002" y="691.304347826087"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="24s-nW-xh9">
             <objects>
                 <tabBarController id="PXZ-XA-Ag4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HHW-eH-6bU"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Nl5-mU-uOZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -241,7 +244,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13A-xm-Zgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="96"/>
+            <point key="canvasLocation" x="1711.2" y="95.802098950524751"/>
         </scene>
     </scenes>
     <resources>

@@ -25,6 +25,10 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         uploadImageView.isUserInteractionEnabled = true
         uploadImageView.addGestureRecognizer(tapGestureRecognizer)
+        
+        //nav bar
+        self.navigationItem.title = "Unit6-Final"
+    
     }
     
     
